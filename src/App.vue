@@ -1,9 +1,14 @@
-<template></template>
+<template>
+	<LayoutApp />
+</template>
 
 <script>
+import LayoutApp from "./components/LayoutApp.vue";
 export default {
 	name: "App",
-	components: {},
+	components: {
+		LayoutApp,
+	},
 };
 </script>
 

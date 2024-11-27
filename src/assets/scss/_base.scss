@@ -1,0 +1,48 @@
+@import "variables";
+@import "mixins";
+// Globales
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+body {
+	// background-color: $bg-color;
+	// font-family: $font;
+	height: 100%;
+	margin: 0;
+	user-select: none;
+}
+
+h1 {
+	font-size: 3rem;
+	@include respond-to(medium) {
+		font-size: 3.5rem;
+	}
+}
+h2 {
+	font-size: 2.5rem;
+	@include respond-to(medium) {
+		font-size: 3rem;
+	}
+}
+h3 {
+	font-size: 2rem;
+
+	@include respond-to(medium) {
+		font-size: 2.5rem;
+	}
+}
+p {
+	font-size: 1.6rem;
+
+	@include respond-to(medium) {
+		font-size: 1.8rem;
+	}
+}

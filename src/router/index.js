@@ -1,7 +1,11 @@
 import { createRouter, createWebHistory } from "vue-router";
-import HomePage from "@/views/HomePage.vue";
+import ProductPage from "@/views/ProductPage.vue";
+import LayoutApp from "@/components/LayoutApp.vue";
 
-const routes = [{ path: "/", component: HomePage }];
+const routes = [
+	{ path: "/", component: LayoutApp },
+	{ path: "/productos", component: ProductPage },
+];
 
 const router = createRouter({
 	history: createWebHistory(),

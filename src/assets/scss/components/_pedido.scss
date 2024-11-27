@@ -1,0 +1,65 @@
+.pedido {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 1rem;
+	border: 1px solid #e0e0e0;
+	margin-bottom: 1rem;
+	.pedido-info {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		gap: 4px;
+		.pedido-id,
+		.pedido-cliente,
+		.pedido-total,
+		.pedido-fecha {
+			font-size: 14px;
+			color: #000000;
+			margin: 0.5rem;
+		}
+		.pedido-id {
+			font-weight: bold;
+			font-size: 16px;
+		}
+
+		.pedido-total {
+			font-weight: bold;
+			color: $color-main;
+		}
+
+		.pedido-fecha {
+			font-size: 12px;
+			color: #757575;
+		}
+	}
+
+	.pedido-acciones {
+		display: flex;
+		gap: 8px;
+
+		.pedido-ver,
+		.pedido-estatus {
+			padding: 8px 12px;
+			border: none;
+			border-radius: 4px;
+			background-color: $color-main;
+			color: white;
+			font-size: 14px;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+
+			&:hover {
+				background-color: #0e1b12;
+			}
+		}
+
+		.pedido-estatus {
+			background-color: #ff004c;
+
+			&:hover {
+				background-color: #913551;
+			}
+		}
+	}
+}

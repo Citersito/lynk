@@ -1,0 +1,101 @@
+@import "../variables"; // Importa tus variables globales si las tienes
+
+#configuracionVendedor {
+	padding: 2rem;
+	max-width: 120rem;
+	margin: 0 auto;
+	h3 {
+		font-size: 1.6rem;
+		font-weight: 500;
+		color: #333;
+		margin-bottom: 1.2rem;
+	}
+
+	.vendedor-perfil,
+	.opciones-tienda,
+	.configuracion-envios {
+		background-color: #fff;
+		padding: 1.5rem;
+		border-radius: 8px;
+		margin-bottom: 1.5rem;
+
+		.input-group {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 1rem;
+
+			label {
+				font-size: 1rem;
+				color: #000000;
+				margin-bottom: 0.5rem;
+			}
+
+			input,
+			select {
+				padding: 0.8rem;
+				font-size: 1rem;
+				border: 1px solid #e0e0e0;
+				border-radius: 4px;
+				outline: none;
+
+				&::placeholder {
+					color: #bdbdbd;
+				}
+
+				&:focus {
+					border-color: $color-main;
+				}
+			}
+
+			input[type="file"] {
+				padding: 0.5rem;
+			}
+		}
+
+		button {
+			background-color: $color-main;
+			color: white;
+			padding: 1rem;
+			font-size: 1rem;
+			border: none;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+			margin: 0 35%;
+			font-size: 1.1rem;
+			font-weight: 300;
+			font-family: $font-main;
+			&:hover {
+				background-color: darken($color-main, 10%);
+			}
+		}
+	}
+
+	.input-group {
+		margin-bottom: 1.5rem;
+	}
+
+	/* Estilo para los formularios */
+	form {
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+	}
+	.vendedor-perfil {
+		background-color: #f9f9f9;
+		border: 1px solid #e0e0e0;
+	}
+	.opciones-tienda {
+		background-color: #f9f9f9;
+		border: 1px solid #e0e0e0;
+	}
+
+	.configuracion-envios {
+		background-color: #f1f1f1;
+	}
+
+	/* Tiempos de carga del logo */
+	input[type="file"] {
+		background-color: #f3f3f3;
+		padding: 0.6rem;
+	}
+}

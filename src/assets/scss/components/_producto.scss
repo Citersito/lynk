@@ -92,3 +92,25 @@
 		}
 	}
 }
+
+.btn-primary {
+	background-color: $color-main; /* Color de fondo */
+	color: white; /* Color del texto */
+	border: none; /* Sin borde */
+	padding: 15px 30px; /* Espaciado interno */
+	font-family: $font-main;
+	font-size: 1.2rem; /* Tamaño de la fuente */
+	font-weight: bold; /* Negrita */
+	border-radius: 5px; /* Bordes redondeados */
+	cursor: pointer; /* Cursor de mano */
+	transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra */
+}
+.btn-primary:hover {
+	background-color: #45a049; /* Color de fondo al pasar el cursor */
+	transform: scale(1.05); /* Efecto de agrandamiento */
+}
+.btn-primary:active {
+	background-color: #388e3c; /* Color de fondo al hacer clic */
+	transform: scale(0.95); /* Efecto de reducción */
+}

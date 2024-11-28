@@ -1,6 +1,7 @@
 <template>
 	<div class="layout">
 		<NavbarApp />
+		<TestConection />
 		<div id="content">
 			<router-view />
 		</div>
@@ -9,10 +10,12 @@
 
 <script>
 import NavbarApp from "./NavbarApp.vue";
+import TestConection from "./testConection.vue";
 
 export default {
 	components: {
 		NavbarApp,
+		TestConection,
 	},
 };
 </script>

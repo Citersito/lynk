@@ -1,6 +1,6 @@
 <template>
 	<div id="navbar">
-		<router-link to="/home">
+		<router-link to="/">
 			<div id="navbarTitle">
 				<h1>Lynk</h1>
 			</div></router-link

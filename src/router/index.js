@@ -6,7 +6,7 @@ import ConfigPage from "@/views/ConfigPage.vue";
 import HomePage from "@/views/HomePage.vue";
 
 const routes = [
-	{ path: "/home", component: HomePage },
+	{ path: "/", component: HomePage },
 	{ path: "/productos", component: ProductPage },
 	{ path: "/pedidos", component: PedidosPage },
 	{ path: "/mi-pagina", component: MyPage },

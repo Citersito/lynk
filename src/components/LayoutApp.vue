@@ -1,7 +1,7 @@
 <template>
 	<div class="layout">
 		<NavbarApp />
-		<TestConection />
+		<!-- <TestConection /> -->
 		<div id="content">
 			<router-view />
 		</div>
@@ -10,12 +10,14 @@
 
 <script>
 import NavbarApp from "./NavbarApp.vue";
+import ProductoInfo from "./producto/ProductoInfo.vue";
 import TestConection from "./testConection.vue";
 
 export default {
 	components: {
 		NavbarApp,
 		TestConection,
+		ProductoInfo,
 	},
 };
 </script>
